@@ -1,0 +1,8 @@
+<label>Medicine Name</label>
+<!--Event Binding-->
+<input type='text' (blur)='changeStatus()' [(ngModel)]='medicineName'>
+<!--Element Property Binding - One Way-->
+<!-- <button [disabled]='buttonStatus'>Show</button> {{medicineName}} {{"'Available qty'"}} {{qty}} -->
+
+<app-get-stock-status [srchMedicine]='medicineName' (status)='update($event)'></app-get-stock-status>
+{{currentStatus}}

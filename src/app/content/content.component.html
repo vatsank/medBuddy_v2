@@ -1,0 +1,7 @@
+<div class='card-deck'>
+    <div class='card' *ngFor='let hospital of hospitalList'>
+        <div class='card-header' style='text-align: center'><img src='assets/images/hospital.png' class='card-img-top'></div>
+        <div class='card-body'>{{hospital.id}} - {{hospital.hospitalName}}</div>
+        <div class='card-footer'>{{hospital.phone}}</div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.logo {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ffd700;
+    border-radius: 2px;
+}
+
+.bground {
+    background-image: linear-gradient(blue, grey, orange, green, blue)
+}
