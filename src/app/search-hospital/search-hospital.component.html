@@ -5,7 +5,18 @@
 <h1>Search Hospital</h1>
 
 <ng-template #locationRef></ng-template>
+<div>
+    <div class='form-group'>
+        <label>Location</label>
+        <input type='text' [(ngModel)]='city' (focus)='show()' class='form-control'>
+    </div>
+    <div class='form-group'>
+        <label>Category</label>
+        <app-drop-down [data]='hospitalCategory' [fieldName]="'category'" class='form-control'></app-drop-down>
 
-<label>Location</label>
-<input type='text' [(ngModel)]='city' (focus)='show()' (blur)='hide()'>
-<button>Search</button>
+    </div>
+    <div>
+        <button class='btn btn-info'>Search</button>
+    </div>
+
+</div>

@@ -18,6 +18,11 @@ import { DataGridComponent } from './data-grid/data-grid.component';
 import { DropDownComponent } from './drop-down/drop-down.component';
 import { ShowLocationComponent } from './show-location/show-location.component';
 import { SearchHospitalComponent } from './search-hospital/search-hospital.component';
+import { TxnHistoryComponent } from './txn-history/txn-history.component';
+import { FilterPipe } from './filter.pipe';
+import { HighLightDirective } from './high-light.directive';
+import { CreateHeaderDirective } from './create-header.directive';
+import { ManageDoctorsComponent } from './manage-doctors/manage-doctors.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +39,12 @@ import { SearchHospitalComponent } from './search-hospital/search-hospital.compo
     DataGridComponent,
     DropDownComponent,
     ShowLocationComponent,
-    SearchHospitalComponent
+    SearchHospitalComponent,
+    TxnHistoryComponent,
+    FilterPipe,
+    HighLightDirective,
+    CreateHeaderDirective,
+    ManageDoctorsComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,8 @@ import { Component, OnInit, ViewContainerRef, ViewChild } from '@angular/core';
 })
 export class SearchHospitalComponent implements OnInit {
 
+  hospitalCategory = ['Super Speciality', 'Dental', 'Eye', 'Family Phsysician', 'Fertility','Diabties'];
+
   @ViewChild('locationRef', {read: ViewContainerRef})  viewRef: ViewContainerRef;
   city = '';
   constructor(private service: ComponentAdderService) { }

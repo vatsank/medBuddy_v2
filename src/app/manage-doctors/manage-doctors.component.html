@@ -1,0 +1,40 @@
+<form #frm='ngForm' (ngSubmit)='submit()'>
+    <div class='form-group'>
+        <label for="id">Id</label>
+        <input type="text" name='id' [(ngModel)]='doctor.id' class='form-control' [disabled]='status'>
+    </div>
+    <div class='form-group'>
+        <label for="doctorName">Doctor Name</label>
+        <input type="text" name='doctorName' [(ngModel)]='doctor.doctorName' class='form-control'>
+    </div>
+    <div class='form-group'>
+        <label for="location"></label>
+        <input type="text" name='location' [(ngModel)]='doctor.location' class='form-control'>
+    </div>
+    <div class='form-group'>
+        <label for="specialization">Specialization</label>
+        <input type="text" name='specialization' [(ngModel)]='doctor.specializataion' class='form-control'>
+    </div>
+    <div class='form-group'>
+        <input type="submit" class='btn btn-danger' [value]='btnText'>
+    </div>
+</form>
+
+<div>
+    <table class='table table-striped'>
+        <tr>
+            <th>Id</th>
+            <th>Doctor Name</th>
+            <th>Location</th>
+            <th>Specialization</th>
+        </tr>
+        <tr *ngFor='let eachDoctor of doctorList'>
+            <td>{{eachDoctor.id}}</td>
+            <td>{{eachDoctor.doctorName}}</td>
+            <td>{{eachDoctor.location}}</td>
+            <td>{{eachDoctor.specializataion}}</td>
+            <td><button (click)='edit(eachDoctor)' class='btn btn-info'>Edit</button></td>
+            <td><button (click)='delete(eachDoctor)' class='btn btn-danger'>Delete</button></td>
+        </tr>
+    </table>
+</div>

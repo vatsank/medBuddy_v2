@@ -1,3 +1,3 @@
 export interface Doctor {
-  id: number;
+  id: number; doctorName: string; location: string; specializataion: string;
 }
