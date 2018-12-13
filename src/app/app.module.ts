@@ -11,6 +11,11 @@ import { ContentComponent } from './content/content.component';
 import { MenuComponent } from './menu/menu.component';
 import { ShowStockComponent } from './show-stock/show-stock.component';
 import { GetStockStatusComponent } from './get-stock-status/get-stock-status.component';
+import { FeedBackComponent } from './feed-back/feed-back.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
+import { DataGridComponent } from './data-grid/data-grid.component';
+import { DropDownComponent } from './drop-down/drop-down.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { GetStockStatusComponent } from './get-stock-status/get-stock-status.com
     ContentComponent,
     MenuComponent,
     ShowStockComponent,
-    GetStockStatusComponent
+    GetStockStatusComponent,
+    FeedBackComponent,
+    LoginComponent,
+    LogoutComponent,
+    DataGridComponent,
+    DropDownComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<table class='table table-striped'>
+    <tr>
+        <th *ngFor='let head of headers'>{{head}}</th>
+    </tr>
+    <tr *ngFor='let item of  dataList'>
+        <td *ngFor='let head of headers'>
+            <div *ngIf="head ==='type'">
+                <img [src]='item[head]'>
+            </div>
+            <div *ngIf="head !=='type'">
+                {{item[head]}}
+
+            </div>
+        </td>
+    </tr>
+</table>

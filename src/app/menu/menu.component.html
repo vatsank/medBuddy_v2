@@ -3,5 +3,11 @@
         <li *ngFor='let eachLink of linkList' class='nav-item'>
             <a class='nav-link' [href]='eachLink.linkRef'>
                  {{eachLink.linkText}}</a></li>
+
+
+        <li class='nav-item' *ngIf='showLogin' > <a class='nav-link' href='a'>Login</a></li>
+        <li class='nav-item' *ngIf='showLogout'> <a class='nav-link' href='c'>Logout</a></li>
+
+
     </ul>
 </nav>

@@ -9,6 +9,7 @@ export class ShowStockComponent implements OnInit {
 
   buttonStatus = true;
   medicineName = 'crocin';
+  medicineList = ['crocin', 'bcomplex'];
   qty = 50;
   currentStatus: any;
 

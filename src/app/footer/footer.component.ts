@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   links: any;
+  inc: boolean;
+  reduce: boolean;
   constructor() {
 
     this.links = [
@@ -19,5 +21,12 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  increse(){
+  this.inc = true;
+  this.reduce = false;
+}
+decrese(){
+  this.inc = false;
+  this.reduce =true;
+}
 }

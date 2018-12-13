@@ -5,3 +5,19 @@
         <div class='card-footer'>{{hospital.phone}}</div>
     </div>
 </div>
+
+<app-feed-back></app-feed-back>
+
+<div class='row'>
+    <div class='col-md-6'>
+        <ol>
+            <li *ngFor='let review of reviews'>{{review}}</li>
+        </ol>
+    </div>
+    <div class='col-md-6'>
+        <ol>
+            <li *ngFor='let rating of ratings'>{{rating}}</li>
+        </ol>
+    </div>
+
+</div>

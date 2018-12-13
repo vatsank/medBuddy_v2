@@ -1,3 +1,24 @@
 ul>li {
     list-style: none;
 }
+
+.incFont {
+    font-size: 1.4em;
+}
+
+.redFont {
+    font-size: 0.8em;
+}
+
+.blueColor {
+    color: #0000ff;
+}
+
+.redColor {
+    color: #ff0000;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
