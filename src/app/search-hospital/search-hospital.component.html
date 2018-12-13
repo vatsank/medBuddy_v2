@@ -1,0 +1,11 @@
+<p>
+    search-hospital works!
+</p>
+
+<h1>Search Hospital</h1>
+
+<ng-template #locationRef></ng-template>
+
+<label>Location</label>
+<input type='text' [(ngModel)]='city' (focus)='show()' (blur)='hide()'>
+<button>Search</button>

@@ -16,6 +16,8 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { DataGridComponent } from './data-grid/data-grid.component';
 import { DropDownComponent } from './drop-down/drop-down.component';
+import { ShowLocationComponent } from './show-location/show-location.component';
+import { SearchHospitalComponent } from './search-hospital/search-hospital.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { DropDownComponent } from './drop-down/drop-down.component';
     LoginComponent,
     LogoutComponent,
     DataGridComponent,
-    DropDownComponent
+    DropDownComponent,
+    ShowLocationComponent,
+    SearchHospitalComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,7 @@ import { DropDownComponent } from './drop-down/drop-down.component';
     FormsModule
   ],
   providers: [HttpClient],
+  entryComponents: [ShowLocationComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
