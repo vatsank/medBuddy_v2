@@ -1,3 +1,4 @@
+import { UniversalGuard } from './universal-guard.guard';
 import { HealthCheckComponent } from './health-check/health-check.component';
 import { ManageDoctorsComponent } from './manage-doctors/manage-doctors.component';
 import { ShowStockComponent } from './show-stock/show-stock.component';
@@ -13,7 +14,9 @@ import { homedir } from 'os';
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'home', component:  ContentComponent},
-  {path: 'history', component: TxnHistoryComponent},
+  {path: 'history', component: TxnHistoryComponent, canActivate: [UniversalGuard]},
+  {path: 'history/:txnId', component: TxnHistoryComponent, canActivate: [UniversalGuard]},
+
   {path: 'login', component: LoginComponent},
   {path: 'logout', component:  LogoutComponent},
   {path: 'medicine', component: ShowStockComponent},

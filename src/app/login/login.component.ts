@@ -38,6 +38,8 @@ export class LoginComponent implements OnInit {
     const pword = this.loginForm.controls.passWord.value;
 
     if (uname === 'india' && pword === 'delhi') {
+
+      sessionStorage.setItem('status', 'logged');
           this.router.navigate(['home']);
     }
 

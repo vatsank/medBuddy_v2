@@ -16,5 +16,10 @@
         <td>{{eachItem.detail | uppercase}}</td>
         <td>{{eachItem.date |date :'medium'}}</td>
         <td>{{eachItem.value |currency:'INR '}}</td>
+        <td><a [routerLink]="['/history',eachItem.id]">More Details</a></td>
     </tr>
 </table>
+
+<div style='background-color: pink'>
+    {{info}}
+</div>
