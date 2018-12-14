@@ -18,7 +18,7 @@ export class TxnHistoryComponent implements OnInit {
 
     this.active.params.subscribe(pathParams => {
       const id = pathParams['txnId'];
-      if (id === undefined){ this.info = 'Loading' } else {
+      if (id === undefined) { this.info = 'Loading' } else {
       this.info = 'Details of Id :=' + id + 'will be loaded';
       }
     });

@@ -9,7 +9,7 @@ import { ContentComponent } from './content/content.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SearchHospitalComponent } from './search-hospital/search-hospital.component';
-import { homedir } from 'os';
+
 
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
