@@ -37,7 +37,7 @@ export class HealthCheckComponent implements OnInit {
     this.service.setViewRef(this.viewRef);
     this.service.addComponent(ShowLocationComponent);
     this.service.selectedPlace.subscribe(value => {
-      console.log(value);
+
       this.checkup.city = value;
       if ( value !== '' ){
        this.service.removeComponent();

@@ -1,12 +1,12 @@
 <nav class='navbar navbar-expand bg-dark' style="margin-left:10px">
     <ul class='navbar-nav'>
         <li *ngFor='let eachLink of linkList' class='nav-item'>
-            <a class='nav-link' [href]='eachLink.linkRef'>
+            <a class='nav-link' [routerLink]="[eachLink.linkRef]">
                  {{eachLink.linkText}}</a></li>
 
 
-        <li class='nav-item' *ngIf='showLogin' > <a class='nav-link' href='a'>Login</a></li>
-        <li class='nav-item' *ngIf='showLogout'> <a class='nav-link' href='c'>Logout</a></li>
+        <li class='nav-item' *ngIf='showLogin'> <a class='nav-link' [routerLink]="['login']">Login</a></li>
+        <li class='nav-item' *ngIf='showLogout'> <a class='nav-link' [routerLink]="['logout']">Logout</a></li>
 
 
     </ul>

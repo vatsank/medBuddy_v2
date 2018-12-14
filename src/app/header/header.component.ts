@@ -13,14 +13,19 @@ export class HeaderComponent implements OnInit {
   constructor() {
     this.logo = 'assets/images/logo.jpg';
     this.links = [
-      {linkRef: 'Home', linkText: 'Home'},
-      {linkRef: 'History', linkText: 'My Transactions'},
-      {linkRef: 'Medicine', linkText: 'Medcine'},
-      {linkRef: 'Locate', linkText: 'Locate Us'}
+      {linkRef: 'home', linkText: 'Home'},
+      {linkRef: 'history', linkText: 'My Transactions'},
+      {linkRef: 'medicine', linkText: 'Medcine'},
+      {linkRef: 'hospital', linkText: 'Hospital'},
+      {linkRef: 'doctors', linkText: 'Doctors'},
+      {linkRef: 'chekup', linkText: 'Health Checkup'}
+
 
 
     ];
   }
+
+
 
   ngOnInit() {
   }

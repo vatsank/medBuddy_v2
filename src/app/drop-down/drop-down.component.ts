@@ -17,7 +17,7 @@ export class DropDownComponent implements OnInit {
   }
 
    selected(){
-     console.log(this.selctedOption);
+
      this.option.emit(this.selctedOption);
    }
 }

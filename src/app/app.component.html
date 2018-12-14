@@ -2,37 +2,13 @@
     <div style='height: 150px;'>
         <app-header></app-header>
     </div>
-    <div style='height: 700px;'>
-        <app-content></app-content>
-        <div>
-            <app-data-grid [dataList]='medicineList'></app-data-grid>
 
-        </div>
+    <div style='height: 700px;'>
+        <router-outlet></router-outlet>
     </div>
+
     <div style='height: 150px;'>
         <app-footer></app-footer>
     </div>
-</div>
-<div>
-    <app-show-stock></app-show-stock>
-</div>
-<div>
-    <app-login></app-login>
-    <app-logout></app-logout>
 
 </div>
-<div>
-    <app-search-hospital></app-search-hospital>
-</div>
-<div>
-    <app-txn-history></app-txn-history>
-</div>
-
-<div>
-    <app-manage-doctors></app-manage-doctors>
-</div>
-
-<div>
-    <app-health-check></app-health-check>
-</div>
-<router-outlet></router-outlet>
