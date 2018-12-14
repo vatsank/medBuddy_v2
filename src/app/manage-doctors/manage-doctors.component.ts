@@ -1,7 +1,6 @@
 import { Doctor } from './../doctor';
 import { MedBuddyAPIService } from './../med-buddy-api.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Doctor } from '../doctor';
 
 @Component({
   selector: 'app-manage-doctors',
@@ -23,10 +22,10 @@ export class ManageDoctorsComponent implements OnInit {
 
   ngOnInit() {
 
-    this.service.getDoctors().subscribe(resp => this.doctorList = resp);
+    this.service.getDoctors().subscribe(resp => this.doctorList = resp, (err)=>{});
   }
 
-  edit(eachDoctor){
+  edit(eachDoctor) {
 
     this.editPox = this.doctorList.indexOf(eachDoctor);
     this.doctor = eachDoctor;

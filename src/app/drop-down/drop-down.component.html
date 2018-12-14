@@ -1,6 +1,6 @@
-<div>
+<div class='form-group'>
 
-    <select [name]='fieldName'>
+    <select [(ngModel)]='selctedOption' name='selectedOption' (change)='selected()'>
     <option *ngFor='let eachData of data' [value]='eachData'>{{eachData}}</option>
   </select>
 

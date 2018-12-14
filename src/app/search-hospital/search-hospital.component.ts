@@ -31,7 +31,5 @@ export class SearchHospitalComponent implements OnInit {
       });
   }
 
-  hide() {
 
-  }
 }

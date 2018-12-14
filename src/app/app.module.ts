@@ -23,6 +23,7 @@ import { FilterPipe } from './filter.pipe';
 import { HighLightDirective } from './high-light.directive';
 import { CreateHeaderDirective } from './create-header.directive';
 import { ManageDoctorsComponent } from './manage-doctors/manage-doctors.component';
+import { HealthCheckComponent } from './health-check/health-check.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ManageDoctorsComponent } from './manage-doctors/manage-doctors.componen
     FilterPipe,
     HighLightDirective,
     CreateHeaderDirective,
-    ManageDoctorsComponent
+    ManageDoctorsComponent,
+    HealthCheckComponent
   ],
   imports: [
     BrowserModule,
